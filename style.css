@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+header {
+  position: absolute; /* Positioning the header over the image */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 6rem; /* Adjust the height as needed */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 10; /* Ensures the header stays above the image */
+  box-sizing: border-box;
+  padding-inline: 3.5rem;
+}
+
+header nav {
+  display: flex;
+  gap: 1.5rem;
+  margin: 8px 0 0 -4rem;
+}
+
+.shop-link {
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+  margin-left: 100px;
+}
+
+.shop-link svg {
+  width: 20px;
+  color: white;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100vh;
+  background: url("https://sxcontent9668.azureedge.us/cms-assets/assets/Maxar_3_titusville_DSC_9200_desktop_31a60c6f5e.jpg")
+    no-repeat center center;
+  background-size: cover;
+  position: relative;
+}
+
+.starlink-section {
+  width: 100%;
+  height: 100vh;
+  background: url("https://sxcontent9668.azureedge.us/cms-assets/assets/Starlink_12_3_Desktop_2a135d6ae5.jpg")
+    no-repeat center center;
+  background-size: cover;
+  position: relative;
+}
+
+.starlink-2-section {
+  width: 100%;
+  height: 100vh;
+  background: url("https://sxcontent9668.azureedge.us/cms-assets/assets/Starlink_G11_4_SW_Hill_1899_Desktop_2_64fd99ba5f.jpg")
+    no-repeat center center;
+  background-size: cover;
+  position: relative;
+}
+
+.starship-section {
+  width: 100%;
+  height: 100vh;
+  background: url("https://sxcontent9668.azureedge.us/cms-assets/assets/Flight_7_Website_Desktop_7_4afb3a9d9a.jpg")
+    no-repeat center center;
+  background-size: cover;
+  position: relative;
+}
+
+.spainsat-section {
+  width: 100%;
+  height: 100vh;
+  background: url("https://sxcontent9668.azureedge.us/cms-assets/assets/Spain_Sat_NG_I_LC_39_A_2025_01_29_DSC_6165_Website_ac0d85f911.jpg")
+    no-repeat center center;
+  background-size: cover;
+  position: relative;
+}
+
+.human-spaceflight-section {
+  width: 100%;
+  height: 100vh;
+  background: url("https://sxcontent9668.azureedge.us/cms-assets/assets/Eva_Suit_Desktop_alternate_1cf9bae18e.jpg")
+    no-repeat center center;
+  background-size: cover;
+  position: relative;
+}
+
+.multiplanetary-section {
+  width: 100%;
+  height: 100vh;
+  background: url("https://sxcontent9668.azureedge.us/cms-assets/assets/make_life_multiplanetary_desktop_3fa7cff73c.jpg")
+    no-repeat center center;
+  background-size: cover;
+  position: relative;
+}
+
+.btn-section {
+  position: absolute;
+  bottom: 8rem;
+  left: 7rem;
+  font-family: "Roboto Condensed", serif;
+  color: white;
+  max-width: 520px;
+}
+
+.btn-section h3 {
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+
+.btn-section h1 {
+  font-weight: 800;
+  font-size: 3rem;
+}
+
+.btn-section button {
+  width: 163px;
+  height: 53px;
+  font-family: "Rubik", serif;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  font-weight: 500;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  width: 100vw;
+  height: 5rem;
+  background-color: black;
+}
+
+footer a,
+footer p {
+  text-decoration: none;
+  color: white;
+  font-family: "Rubik", serif;
+  font-weight: 300;
+  font-size: 0.7rem;
+}
+
+.footer-link {
+  font-weight: 500;
+}
+
+.logo {
+  width: 210px;
+  fill: white;
+}
+
+.link {
+  cursor: pointer;
+  color: white;
+  font-size: 0.82rem;
+  font-family: "Rubik", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  text-decoration: none;
+  position: relative; /* Needed for absolute positioning of underline */
+  display: inline-block;
+  padding-bottom: 3px; /* Adjust spacing between text and underline */
+}
+
+.link::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px; /* Keep the underline thin */
+  bottom: 0;
+  left: 0;
+  background-color: white; /* Matches text color */
+  transform: scaleX(0); /* Initially hidden */
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+
+.link:hover::after {
+  transform: scaleX(1); /* Expands on hover */
+  transform-origin: bottom left;
+}
+
+.transition-btn {
+  position: relative;
+  outline: none;
+  border: 2px solid white;
+  background: transparent;
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+  font-family: "Rubik", serif;
+  padding: 10px 20px;
+  cursor: pointer;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 120px;
+  transition: box-shadow 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.2s ease-in-out;
+}
+
+.transition-btn::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: white;
+  top: 100%;
+  left: 0;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  z-index: 0;
+}
+
+.transition-btn span {
+  position: relative;
+  z-index: 1;
+  transition: color 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Hover in: White background moves up from bottom */
+.transition-btn:hover::before {
+  transform: translateY(-100%);
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1); /* Keep fast entry */
+}
+
+/* Hover in: Text turns black */
+.transition-btn:hover span {
+  color: black;
+  transition: color 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Hover out: Background continues moving up and disappears (Slower exit) */
+.transition-btn::before {
+  transform: translateY(100%);
+  transition: transform 0.9s cubic-bezier(0.16, 1, 0.3, 1); /* Slower exit */
+}
+
+/* Reset text color when not hovered */
+.transition-btn:not(:hover) span {
+  color: white;
+  transition: color 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.transition-btn:active {
+  transform: scale(0.95);
+}
+
+h1 {
+  font-size: 50px; /* Adjust size as needed */
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); /* Shadow effect */
+  text-transform: uppercase; /* Ensures all caps */
+}
